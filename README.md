@@ -19,6 +19,7 @@ The web application is a single page application (SPA) that uses JavaScript to d
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [PostCSS](https://postcss.org/)
 - [Git](https://training.github.com/downloads/github-git-cheat-sheet/)

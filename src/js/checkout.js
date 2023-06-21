@@ -1,6 +1,5 @@
 import {checkoutTotal} from "../js/base";
 
-
 checkoutTotal.innerText = localStorage.getItem("total");
 console.log(checkoutTotal);
 
@@ -13,7 +12,6 @@ payButton.addEventListener('click', (e) => {
      <p>Welcome back!</p>
     `;
 })
-
 
 const storeButton = document.getElementById('store-button');
 storeButton.addEventListener('click', (e) => {

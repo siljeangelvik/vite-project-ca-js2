@@ -30,6 +30,5 @@
   "author": "S- Angelvik",
   "license": "ISC",
   "homepage": "",
-  "main": "postcss.config.js",
   "description": ""
 }

@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nice Cream | Purchase</title>
+</head>
+<body class="bg-gray-800">
+
+<header></header>
+
+<div class="mt-20 pt-16 sm:px-4 px-10">
+    <h1 class="py-2 font-bold">Nice Cream</h1>
+    <p>Create your own ice cream pot and have it delivered to your door.</p>
+</div>
+
+<!-- FORM -->
+<form class="container sm:px-4 px-10">
+    <div class="form-check">
+
+        <!-- Flavour -->
+        <div class="pt-6 form-group">
+            <p class="font-bold pb-3">Choose your base flavour</p>
+            <!-- vanilla -->
+            <div class="form-check flex items-center mb-4">
+                <input checked id="vanilla" type="radio" name="flavour" value="vanilla"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="vanilla" class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vanilla</label>
+            </div>
+            <!-- chocolate -->
+            <div class="form-check flex items-center mb-4">
+                <input id="chocolate" type="radio" name="flavour" value="chocolate"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="chocolate"
+                       class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Chocolate</label>
+            </div>
+        </div>
+
+        <!-- Size -->
+        <div class="pt-6 form-group">
+            <p class="font-bold pb-3">Choose the size pot you want</p>
+            <p class="error text-red-600"></p>
+            <label for="size" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+            <select id="size"
+                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option value="0" selected>Choose the size pot you want</option>
+                <option value="10">1 kg - $10</option>
+                <option value="20">2.5 kg - $20</option>
+                <option value="35">5 kg - $35</option>
+            </select>
+        </div>
+
+        <!-- Additions -->
+        <div class="pt-6 form-group">
+            <p class="font-bold pb-3">Choose your additions: <span class="pt-3 font-normal italic">$5 each</span></p>
+            <!-- sprinkles -->
+            <div class="form-check flex items-center mb-4">
+                <input id="sprinkles" type="checkbox" name="additions" value="5"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="sprinkles"
+                       class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sprinkles</label>
+            </div>
+            <!-- raspberry ripple -->
+            <div class="form-check flex items-center mb-4">
+                <input id="rasberryripple" type="checkbox" name="additions" value="5"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="rasberryripple"
+                       class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Rasberry
+                    Ripple</label>
+            </div>
+            <!-- choc chip -->
+            <div class="form-check flex items-center mb-4">
+                <input id="chocchipcookie" type="checkbox" name="additions" value="5"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="chocchipcookie"
+                       class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Choc Chip
+                    Cookie</label>
+            </div>
+            <!-- fudge -->
+            <div class="form-check flex items-center mb-4">
+                <input id="fudge" type="checkbox" name="additions" value="5"
+                       class="form-check-input w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="fudge" class="form-check-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fudge</label>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Button trigger modal -->
+<button id="add-button" type="button"
+        class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+        data-bs-toggle="modal" data-bs-target="#cartModal" onclick="">
+    Add to cart
+</button>
+
+<!-- Shopping Cart Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+     id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog relative w-auto pointer-events-none">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-gray-800 bg-clip-padding rounded-md outline-none text-current">
+            <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                <h5 class="text-xl font-bold leading-normal" id="cartModalLabel">Shopping cart</h5>
+                <button type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body relative p-4">
+                <!--  Modal body text goes here. -->
+            </div>
+            <!-- TOTAL -->
+            <div class="p-4 flex justify-end">
+                <div class="total"></div>
+            </div>
+            <div class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                <button type="button"
+                        class="px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button id="checkout-button" type="button"
+                        class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+
+<script type="module" src="js/base.js"></script>
+<script type="module" src="js/shopping-cart.js"></script>
+</body>
+</html>

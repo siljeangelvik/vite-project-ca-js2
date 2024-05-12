@@ -18,4 +18,4 @@ storeButton.addEventListener('click', (e) => {
     e.preventDefault();
     //localStorage.removeItem("total", total);
     window.location.href = '../index.html.html';
-})
+});

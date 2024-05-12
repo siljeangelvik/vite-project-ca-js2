@@ -6,29 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nice Cream | Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="bg-gray-800">
-
 <header></header>
-
 <div class="mt-20 pt-16 sm:px-4 px-10">
     <h1 class="py-2 font-bold">Nice Cream</h1>
     <p>Create your own ice cream pot and have it delivered to your door.</p>
 </div>
-
 <form class="container sm:px-4 px-10">
     <h3 class="text-2xl font-bold pt-6 pb-3">Your shopping cart: $<span class="total"></span></h3>
     <div class="flex flex-row justify-between gap-4">
         <!-- name -->
         <div class="mb-6 w-full">
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+            <label for="name" class="block mb-2 text-sm font-medium text-white dark:text-white">Name</label>
             <input type="text" id="name"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                    placeholder="Name" required>
         </div>
         <!-- email -->
         <div class="mb-6 w-full">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+            <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Email</label>
             <input type="email" id="email"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                    placeholder="name@email.com" required>
@@ -38,14 +37,14 @@
         <!-- address -->
         <div class="mb-6 w-full">
             <label for="inputAddress"
-                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                   class="block mb-2 text-sm font-medium text-white dark:text-white">Address</label>
             <input type="text" id="inputAddress"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                    placeholder="123 Main st" required>
         </div>
         <!-- address 2 -->
         <div class="mb-6 w-full">
-            <label for="inputAddress2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address
+            <label for="inputAddress2" class="block mb-2 text-sm font-medium text-white dark:text-white">Address
                 2</label>
             <input type="text" id="inputAddress2"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -55,14 +54,14 @@
     <div class="flex flex-row justify-between gap-4">
         <!-- city -->
         <div class="mb-6 w-full">
-            <label for="inputCity" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City</label>
+            <label for="inputCity" class="block mb-2 text-sm font-medium text-white dark:text-white">City</label>
             <input type="text" id="inputCity"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                    placeholder="Oslo" required>
         </div>
         <!-- state -->
         <div class="mb-6 w-full">
-            <label for="inputState" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
+            <label for="inputState" class="block mb-2 text-sm font-medium text-white dark:text-white">State</label>
             <select id="inputState"
                     class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option selected>Choose...</option>
@@ -74,7 +73,7 @@
         </div>
         <!-- zip -->
         <div class="mb-6 w-full">
-            <label for="inputZip" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Zip</label>
+            <label for="inputZip" class="block mb-2 text-sm font-medium text-white dark:text-white">Zip</label>
             <input type="text" id="inputZip" placeholder="1234"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
@@ -100,11 +99,11 @@
     <div class="flex flex-row justify-between gap-4">
         <!-- credit card name -->
         <div class="mb-6 w-full">
-            <label for="cc-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name on
+            <label for="cc-name" class="block mb-2 text-sm font-medium text-white dark:text-white">Name on
                 card</label>
             <input type="text" id="cc-name"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                   placeholder="" required>
+                   placeholder="John A. Doe" required>
             <small class="text-muted">Full name as displayed on card</small>
             <div class="invalid-feedback">
                 Name on card is required
@@ -112,11 +111,11 @@
         </div>
         <!-- credit card number -->
         <div class="mb-6 w-full">
-            <label for="cc-number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Credit card
+            <label for="cc-number" class="block mb-2 text-sm font-medium text-white dark:text-white">Credit card
                 number</label>
             <input type="text" id="cc-number"
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                   placeholder="" required>
+                   placeholder="xxxx-xxxx-xxxx" required>
             <div class="invalid-feedback">
                 Credit card number is required
             </div>
@@ -126,7 +125,7 @@
         <!-- expiration date -->
         <div class="mb-6 w-full">
             <label for="cc-expiration"
-                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expiration</label>
+                   class="block mb-2 text-sm font-medium text-white dark:text-white">Expiration</label>
             <input type="text" id="cc-expiration" placeholder="01/23" required
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <div class="invalid-feedback">
@@ -135,7 +134,7 @@
         </div>
         <!-- CVV code -->
         <div class="mb-6 w-full">
-            <label for="cc-cvv" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CVV</label>
+            <label for="cc-cvv" class="block mb-2 text-sm font-medium text-white dark:text-white">CVV</label>
             <input type="text" id="cc-cvv" placeholder="292" required
                    class="form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <div class="invalid-feedback">
@@ -151,8 +150,6 @@
         Pay
     </button>
 </form>
-
-
 <!-- Success Modal -->
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
      id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
@@ -182,12 +179,8 @@
         </div>
     </div>
 </div>
-
-
 <footer></footer>
-
 <script type="module" src="js/base.js"></script>
 <script type="module" src="js/checkout.js"></script>
-
 </body>
 </html>

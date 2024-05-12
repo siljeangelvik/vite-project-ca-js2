@@ -1,5 +1,7 @@
 # Vite Project CA JS2
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55853c4d-3432-4959-9723-62145552025b/deploy-status)](https://app.netlify.com/sites/vite-project-ca-js2/deploys)
+
 **Student:** [Silje Angelvik](https://github.com/siljeangelvik)    
 **Host:** [Netlify](https://vite-project-ca-js2.netlify.app/)  
 **Repository:** [GitHub](https://github.com/siljeangelvik/vite-project-ca-js2)
@@ -11,7 +13,7 @@
 
 ## Description
 
-The project is a web application for a fictional ice cream shop called Nice Cream. 
+The project is a web application for a fictional ice cream shop called Nice Cream.
 
 The web application is a single page application (SPA) that uses JavaScript to dynamically load content.
 

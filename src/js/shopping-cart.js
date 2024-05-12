@@ -3,10 +3,9 @@ import {checkoutButton, errorMessage} from "../js/base";
 let total = 0;
 const cartDetails = document.querySelector('.modal-body');
 const totalAmount = document.querySelector('.total');
-
 let addButton = document.getElementById('add-button');
-addButton.addEventListener('click', function () {
 
+addButton.addEventListener('click', function () {
     let flavour = document.querySelector('input[name="flavour"]:checked');
     let size = document.querySelector('option[value]:checked');
     let additions = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -14,10 +13,11 @@ addButton.addEventListener('click', function () {
     console.log(additions);
     console.log(size.value);
 
-    if (size.value === 0) {
+    if (size.value == 0) {
         console.log("test");
         cartModal.style.display = "none";
-        errorMessage.innerHTML = "You need to choose a size";
+        cartDetails.innerHTML = "You need to choose a size for your ice cream";
+        errorMessage.innerHTML = "You need to choose a size for your ice cream";
         return;
     }
 
@@ -37,9 +37,11 @@ addButton.addEventListener('click', function () {
 let cartModal = document.getElementById('cartModal');
 
 function displayCart(flavour, size, additions, price) {
+
     // console.log(flavour.id);
     // console.log(size.textContent);
     // console.log(additions);
+
     console.log(price);
 
     let additionsItems = [];
@@ -85,3 +87,19 @@ checkoutButton.addEventListener('click', (e) => {
     localStorage.setItem("total", total);
     window.location.href = '../checkout.html';
 })
+
+/*
+ let niceCream = {
+        "flavour": flavour.value,
+        "size": size.textContent,
+        "sizeValue": parseInt(size.value),
+        "additions": [additions],
+        "additionsValue": additionsValue,
+        "itemPrice": itemPrice,
+    }
+
+    console.log(niceCream);
+    JSON.stringify(niceCream);
+    localStorage.setItem("niceCream", niceCream);
+
+ */
